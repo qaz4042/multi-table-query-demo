@@ -1,0 +1,20 @@
+spring:
+  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/multi_table_query_demo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#    username: root
+#    password: root
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:multi_table_query_demo
+    username: multi_table_query_demo
+    password:
+  sql:
+    init:
+      data-locations: classpath:db/data.sql
+      schema-locations: classpath:db/schema.sql
+  h2:
+    console:
+      enabled: true
+multi-table-query:
+    checkRelationRequire: true
+    checkRelationOneOrMany: true
