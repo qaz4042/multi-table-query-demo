@@ -1,7 +1,6 @@
 package com.example.multitablequery.demo.config;
 
 import com.bebetter.mtq.service.multiwrapper.MultiTableRelationService;
-import com.bebetter.mtq.service.multiwrapper.executor.sqlexecutor.MultiDbJdbcAdaptor;
 import com.example.multitablequery.demo.service.MultiTableRelationServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
